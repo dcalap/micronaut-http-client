@@ -2,10 +2,7 @@ package example.micronaut;
 
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.MediaType;
-import io.micronaut.http.annotation.Consumes;
-import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Post;
-import io.micronaut.http.annotation.Produces;
+import io.micronaut.http.annotation.*;
 import io.micronaut.protobuf.codec.ProtobufferCodec;
 
 @Controller("/proto")
@@ -18,7 +15,8 @@ public class ProtobufController implements ProtobufOperations{
 //    }
 
     @Override
-    public String getLicense(byte[] data) {
+    public String getLicense(@Body byte[] data) {
+        System.out.println(data);
         return data.toString();
     }
 

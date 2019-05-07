@@ -15,10 +15,20 @@ public class BintrayController {
 
     private final BintrayClient bintrayClient;
 
+    private final ProtobufClient protobufClient;
+
     public BintrayController(BintrayLowLevelClient bintrayLowLevelClient, // <2>
-                             BintrayClient bintrayClient) {
+                             BintrayClient bintrayClient,ProtobufClient protobufClient) {
         this.bintrayLowLevelClient = bintrayLowLevelClient;
         this.bintrayClient = bintrayClient;
+        this.protobufClient = protobufClient;
+    }
+
+    @Get("miprueba")
+    String prueba() {
+        byte[] array = "Any String you want".getBytes();
+        protobufClient.getLicense(array);
+        return "";
     }
 
     @Get("/packages-lowlevel") // <3>
