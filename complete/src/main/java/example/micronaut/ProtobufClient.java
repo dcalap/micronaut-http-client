@@ -14,4 +14,9 @@ public interface ProtobufClient extends ProtobufOperations {
     @Override
     @Produces(ProtobufferCodec.PROTOBUFFER_ENCODED)
     String getLicense(@Body byte[] data);
+
+    @Override
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    String getLogLines(@Body String logs);
 }

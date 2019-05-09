@@ -9,4 +9,6 @@ public interface BintrayClient {
 
     @Get("/api/${bintray.apiversion}/repos/${bintray.organization}/${bintray.repository}/packages")  // <2>
     Flowable<BintrayPackage> fetchPackages(); // <3>
+
+
 }

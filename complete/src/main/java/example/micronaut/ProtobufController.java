@@ -20,6 +20,12 @@ public class ProtobufController implements ProtobufOperations{
         return data.toString();
     }
 
+    @Override
+    public String getLogLines(@Body String logs) {
+        System.out.println(logs);
+        return logs.toString();
+    }
+
 
 //    @Post("/receivedata")
 //    @Consumes(ProtobufferCodec.PROTOBUFFER_ENCODED)

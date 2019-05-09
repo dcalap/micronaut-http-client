@@ -1,0 +1,9 @@
+example.micronaut.$ProtobufClient$InterceptedDefinitionClass
+example.micronaut.$BintrayClient$InterceptedDefinitionClass
+example.micronaut.$BintrayLowLevelClientDefinitionClass
+example.micronaut.$ProtobufControllerDefinitionClass
+example.micronaut.$HelloControllerDefinitionClass
+example.micronaut.$HelloClient$InterceptedDefinitionClass
+example.micronaut.$BintrayFilterDefinitionClass
+example.micronaut.$BintrayControllerDefinitionClass
+example.micronaut.$BintrayConfigurationDefinitionClass

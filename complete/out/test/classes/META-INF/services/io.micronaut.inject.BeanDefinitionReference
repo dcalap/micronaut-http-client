@@ -1,0 +1,3 @@
+example.micronaut.$ProtobufTestDefinitionClass
+example.micronaut.$HelloControllerTestDefinitionClass
+example.micronaut.$HelloClient$InterceptedDefinitionClass
